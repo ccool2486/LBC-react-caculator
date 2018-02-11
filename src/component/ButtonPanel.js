@@ -1,12 +1,12 @@
-import Button from './Button';
-import React from 'react';
-import PropTypes from 'prop-types';
+import Button from './Button'
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import './ButtonPanel.css';
+import './ButtonPanel.css'
 
 class ButtonPanel extends React.Component {
   handleClick = (buttonName) => {
-    this.props.clickHandler(buttonName);
+    this.props.clickHandler(buttonName)
   }
 
   render() {
@@ -42,10 +42,10 @@ class ButtonPanel extends React.Component {
           <Button name="=" clickHandler={this.handleClick} orange />
         </div>
       </div>
-    );
+    )
   }
 }
-ButtonPanel.propTypes = {
-  clickHandler: PropTypes.func,
-};
-export default ButtonPanel;
+ButtonPanel.propTypes = { 
+  clickHandler: PropTypes.func, // 確保clickHandler傳進來的時候是一個function https://react.bootcss.com/react/docs/typechecking-with-proptypes.html
+}
+export default ButtonPanel
