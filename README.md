@@ -1,4 +1,4 @@
-學習：
+Learn from：
 ---
 https://github.com/ahfarmer/calculator
 
